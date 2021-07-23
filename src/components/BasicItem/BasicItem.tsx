@@ -1,14 +1,17 @@
+import { useContext } from "react";
+import { MenuContext } from "../../context/MenuContextProvider";
 import { Item } from "../../model/BasicItemInterface";
 
-interface Prop {
-    item: Item;
-}
 
 
-function BasicItem({item}: Prop){
+
+function BasicItem(){
+
+    const { menu } = useContext(MenuContext);
 
     return(
         <div>
+            <h4>{menu}</h4>
             
         </div>
     );

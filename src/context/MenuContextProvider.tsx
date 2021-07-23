@@ -80,7 +80,6 @@ export function MenuContextProvider({children} : {children: ReactNode}){
             calories: 1050,
           },   
     ]);
-
     return (
         <MenuContext.Provider value={ {menu} }>
             {children}
